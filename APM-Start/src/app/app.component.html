@@ -1,6 +1,30 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  ... Starter Files ...
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+  <div class="container">
+    <a routerLink="/welcome" class="navbar-brand">{{ title }}</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a routerLink="/welcome" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/products" class="nav-link">Product List</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
 </div>

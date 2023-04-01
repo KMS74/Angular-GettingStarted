@@ -24,9 +24,13 @@
               "src/api"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +105,5 @@
   },
   "cli": {
     "analytics": "a5a3699a-303c-4bde-88b8-3260d96a6683"
-  },
+  }
 }
